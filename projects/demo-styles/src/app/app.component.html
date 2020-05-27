@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <span>Custom Toolbar</span>
+</mat-toolbar>
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Toggle Theme</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="update('color-scheme-dark')"
+      >
+        Dark Mode
+      </button>
+      &nbsp;&nbsp;&nbsp;
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="update('color-scheme-light')"
+      >
+        Light Mode
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
